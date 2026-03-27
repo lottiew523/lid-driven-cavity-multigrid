@@ -80,11 +80,14 @@ n = 4;
 Re = 10;
 dt = 0.2;
 SOR = 1.95;
+```
+
 
 ### Full Results
 
 ```matlab
 AllRun
+```
 
 Reults are saved to
 
