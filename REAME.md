@@ -1,4 +1,4 @@
-# 🌀 Lid-Driven Cavity Solver (Vorticity–Streamfunction, MATLAB)
+# Lid-Driven Cavity Solver (Vorticity–Streamfunction, MATLAB)
 
 A 2D incompressible flow solver for the classical lid-driven cavity problem using the vorticity–streamfunction formulation.  
 
@@ -6,7 +6,7 @@ This project focuses on **numerical accuracy, convergence behaviour, and solver 
 
 ---
 
-## 📌 Overview
+##  Overview
 
 The solver computes steady-state flow in a square cavity driven by a moving lid.
 
@@ -25,7 +25,7 @@ Includes:
 
 ---
 
-## ⚙️ Governing Equations
+## Governing Equations
 
 The solver uses the **vorticity–streamfunction formulation**:
 
@@ -35,20 +35,20 @@ v = -dψ/dx
 
 ---
 
-## 🚀 Features
+##  Features
 
 - Structured grid: `nx = 2^n + 1`
-- Stability-aware timestep handling
-- Automatic divergence detection
-- Multigrid acceleration
+- Automatic Stability timestep handling
+- Divergence detection
+- Multigrid accellerated solver
 - Parameter sweeps:
   - Reynolds number (Re)
   - Grid resolution (n)
-  - Relaxation factor (ω)
+  - Relaxation factor (SOR)
 - Performance analysis:
   - Wall time scaling
   - Multigrid speedup
-- Automated plotting pipeline
+- Automated plotting script :)
 
 ---
 
@@ -93,7 +93,9 @@ Reults are saved to
 
 ```matlab
 dat.mat
+```
 
 Then run:
 ```matlab
 AllPlot
+```
