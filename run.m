@@ -7,8 +7,9 @@ dt = .2;
 tmax = 10;
 tol = 1e-8;
 SOR=1.95;
+MultiGrid = false
 
-sol = vs_solver(n,LidVel,Re,dt,tmax,tol,SOR,0);
+sol = vs_solver(n,LidVel,Re,dt,tmax,tol,SOR,MultiGrid);
 
 x = sol.x;
 t_final = sol.t(end);
